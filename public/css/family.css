@@ -1,0 +1,116 @@
+/* Family dashboard specific styles */
+
+/* Top bar with circle selector and sign‑out */
+.fam-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.fam-top .circle-select {
+  max-width: 200px;
+}
+
+.fam-top .signout-btn {
+  margin-left: auto;
+}
+
+/* Tabs navigation */
+.fam-tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.fam-tabs .tab {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: none;
+}
+
+.fam-tabs .tab.active {
+  border-color: #ccc #ccc #fff;
+  background: #fff;
+  font-weight: bold;
+}
+
+/* Overview cards */
+.overview-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Medicine list cards */
+.meds-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.meds-card .actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Appointment cards */
+.appt-card {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.appt-card .status {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Circle members table */
+.circle-members {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.circle-members th,
+.circle-members td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Activity list */
+.activity-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Reports charts (simple bars) */
+.report-bar {
+  height: 1rem;
+  background: var(--primary-color, #0F766E);
+  margin: 0.25rem 0;
+}
+
+/* Print view helpers */
+.print-only {
+  display: none;
+}
+@media print {
+  .print-only { display: block; }
+  .no-print { display: none; }
+}
